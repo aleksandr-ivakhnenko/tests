@@ -125,4 +125,12 @@
     top: 7px;
     width: 30px;
   }
+
+  .burger__btn-open::before {
+    transform: rotate(45deg);
+  }
+
+  .burger__btn-open::after {
+    transform: rotate(-45deg);
+  }
 }
