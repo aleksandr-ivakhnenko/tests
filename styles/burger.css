@@ -98,7 +98,6 @@
 @media (max-width: 1199px) {
   .burger__btn {
     position: absolute;
-    top: 0;
     right: 15px;
     display: block;
     background: none;
@@ -119,7 +118,6 @@
     width: 100%;
     background-color: #121212;
     transition: all 0.5s;
-    transform: rotate(0) translateY(0) translateX(0);
   }
 
   .burger__btn::after {
@@ -128,11 +126,11 @@
   }
 
   .burger__btn-open::before {
-    transform: rotate(45deg) translateY(11px) translateX(5px);
+    transform: rotate(45deg);
     /* transition: all 0.5s ease-in-out; */
   }
   .burger__btn-open::after {
-    transform: rotate(-45deg) translateY(0) translateX(-7px);
+    transform: rotate(-45deg);
     width: 100%;
     /* transition: all 0.5s ease-in-out; */
   }
