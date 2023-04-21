@@ -98,6 +98,7 @@
 @media (max-width: 1199px) {
   .burger__btn {
     position: absolute;
+    z-index: 500;
     right: 15px;
     display: block;
     background: none;
@@ -121,41 +122,7 @@
   }
 
   .burger__btn::after {
-    top: 6px;
-    width: 31px;
-  }
-
-  .burger__btn-open::before {
-    transform: rotate(45deg);
-    /* transition: all 0.5s ease-in-out; */
-  }
-  .burger__btn-open::after {
-    transform: rotate(-45deg);
-    width: 100%;
-    /* transition: all 0.5s ease-in-out; */
-  }
-
-  .burger__btn-open {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    z-index: 200;
-    right: 25px;
-    width: 34px;
-    height: 34px;
-
-    /* Это простой вариант с картинкой-крестиком, если убрать все rotate анимации */
-
-    /* background-image: url(../resources/btn-close.png);
-    background-size: contain;
-    background-repeat: no-repeat; */
-  }
-}
-
-@media (max-width: 767px) {
-  .burger__btn {
-    right: 12px;
-    height: 12px;
+    top: 7px;
+    width: 30px;
   }
 }
