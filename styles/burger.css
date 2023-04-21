@@ -135,11 +135,20 @@
   }
 
   .burger__btn-open {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
     position: absolute;
     z-index: 200;
     right: 25px;
     width: 34px;
     height: 34px;
+
+    /* Это простой вариант с картинкой-крестиком, если убрать все rotate анимации */
+
+    /* background-image: url(../resources/btn-close.png);
+    background-size: contain;
+    background-repeat: no-repeat; */
   }
 }
 
