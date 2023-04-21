@@ -135,9 +135,6 @@
   }
 
   .burger__btn-open {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: absolute;
     z-index: 200;
     right: 25px;
