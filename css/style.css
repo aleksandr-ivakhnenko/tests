@@ -449,8 +449,7 @@ body {
 
 .app {
   position: relative;
-  overflow: hidden;
-  min-height: var(--app-height);
+  height: var(--app-height);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
