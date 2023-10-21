@@ -378,7 +378,6 @@ input[type=number]::-webkit-outer-spin-button {
     height: calc(100% - 240px);
     margin: 0;
     overflow-y: auto;
-    opacity: 1;
     visibility: visible;
     -webkit-transition: opacity 0.1s, -webkit-transform 0.3s;
     transition: opacity 0.1s, -webkit-transform 0.3s;
@@ -437,7 +436,7 @@ input[type=number]::-webkit-outer-spin-button {
 html,
 body {
   scroll-behavior: smooth;
-  height: 100vh;
+  height: var(--app-height);
 }
 
 body {
@@ -449,7 +448,8 @@ body {
 
 .app {
   position: relative;
-  height: var(--app-height);
+  overflow: hidden;
+  min-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
