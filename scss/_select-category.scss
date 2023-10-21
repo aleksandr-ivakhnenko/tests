@@ -1,19 +1,17 @@
-@import "colors.scss";
-
-
+@import 'colors.scss';
 
 .select-category {
 	position: relative;
 	height: 58px;
 	border: 1px solid $color-black;
 	background-color: $color-white;
-	
+
 	@media (max-width: 767px) {
 		font-size: 24px;
 	}
 
 	&::before {
-		content: "";
+		content: '';
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
@@ -48,17 +46,16 @@
 		@media (max-width: 1199px) {
 			position: fixed;
 			top: 0;
-			bottom: 0;
-			left: 0;
 			width: 100%;
 			height: calc(100% - 240px);
 			margin: 0;
 			overflow-y: auto;
 			opacity: 1;
 			visibility: visible;
+			transition: opacity 0.1s, transform 0.3s;
 			transform: translateY(-100%);
 		}
-		
+
 		&.visible {
 			visibility: visible;
 			opacity: 1;
@@ -88,7 +85,7 @@
 		padding: 10px 0;
 
 		&::after {
-			content: "";
+			content: '';
 			width: 100%;
 			height: 1px;
 			background-color: rgba(0, 0, 0, 0.13);

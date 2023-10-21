@@ -83,11 +83,11 @@ function showOrHideNode(node) {
 	node.classList.toggle('visible');
 }
 
-// Функция для того, что-бы в моб. версии при height = 100vh, не учитывался интерфейс браузеров...
-/* const appHeight = () => {
+// Функция расчета правильной высоты "app" с учетом интерфейсов мобильных браузеров...
+const appHeight = () => {
 	const doc = document.documentElement;
 	doc.style.setProperty('--app-height', `${window.innerHeight}px`);
 };
 
 window.addEventListener('resize', appHeight);
-appHeight(); */
+appHeight();
