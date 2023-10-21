@@ -428,9 +428,12 @@ input[type=number]::-webkit-outer-spin-button {
   display: none;
 }
 
-/* :root {
-	--app-height: 100%;
-} */
+html,
+body {
+  scroll-behavior: smooth;
+  height: 100vh;
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-size: 32px;
@@ -440,8 +443,21 @@ body {
 
 .app {
   position: relative;
-  height: 100vh;
-  /* height: var(--app-height); */
+  overflow: hidden;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 .container {

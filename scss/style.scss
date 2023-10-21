@@ -10,9 +10,11 @@
 @import 'select-category';
 
 // Common styles
-/* :root {
-	--app-height: 100%;
-} */
+html,
+body {
+	scroll-behavior: smooth;
+	height: 100vh;
+}
 
 body {
 	font-family: 'Inter', sans-serif;
@@ -23,12 +25,14 @@ body {
 
 .app {
 	position: relative;
-	//overflow: hidden;
-	height: 100vh;
-	/* height: var(--app-height); */
+	overflow: hidden;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
 }
 
 .main {
+	flex: 1 1 auto;
 }
 
 .container {
