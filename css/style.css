@@ -428,10 +428,9 @@ input[type=number]::-webkit-outer-spin-button {
   display: none;
 }
 
-:root {
-  --app-height: 100%;
-}
-
+/* :root {
+	--app-height: 100%;
+} */
 body {
   font-family: "Inter", sans-serif;
   font-size: 32px;
@@ -442,7 +441,7 @@ body {
 .app {
   position: relative;
   height: 100vh;
-  height: var(--app-height);
+  /* height: var(--app-height); */
 }
 
 .container {
@@ -471,4 +470,8 @@ body {
   .currency {
     font-size: 24px;
   }
+}
+
+.red {
+  color: red;
 }

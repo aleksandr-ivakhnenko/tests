@@ -84,10 +84,10 @@ function showOrHideNode(node) {
 }
 
 // Функция для того, что-бы в моб. версии при height = 100vh, не учитывался интерфейс браузеров...
-const appHeight = () => {
+/* const appHeight = () => {
 	const doc = document.documentElement;
 	doc.style.setProperty('--app-height', `${window.innerHeight}px`);
 };
 
 window.addEventListener('resize', appHeight);
-appHeight();
+appHeight(); */

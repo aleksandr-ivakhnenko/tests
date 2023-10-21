@@ -10,9 +10,9 @@
 @import 'select-category';
 
 // Common styles
-:root {
+/* :root {
 	--app-height: 100%;
-}
+} */
 
 body {
 	font-family: 'Inter', sans-serif;
@@ -25,7 +25,7 @@ body {
 	position: relative;
 	//overflow: hidden;
 	height: 100vh;
-	height: var(--app-height);
+	/* height: var(--app-height); */
 }
 
 .main {
@@ -56,4 +56,8 @@ body {
 	@media (max-width: 767px) {
 		font-size: 24px;
 	}
+}
+
+.red {
+	color: red;
 }
