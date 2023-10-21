@@ -1,0 +1,59 @@
+@import 'colors';
+
+@import 'reset';
+@import 'fonts';
+
+@import 'headings';
+@import 'buttons';
+@import 'inputs';
+@import 'forms';
+@import 'select-category';
+
+// Common styles
+:root {
+	--app-height: 100%;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	font-size: 32px;
+	line-height: 39px;
+	font-weight: 400;
+}
+
+.app {
+	position: relative;
+	//overflow: hidden;
+	height: 100vh;
+	height: var(--app-height);
+}
+
+.main {
+}
+
+.container {
+	max-width: 1010px;
+	margin: 0 auto;
+
+	@media (max-width: 1199px) {
+		max-width: 100%;
+		padding: 15px;
+	}
+}
+
+.currency {
+	&::after {
+		content: '₽';
+	}
+
+	&_inside-input {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 17px;
+	}
+
+	@media (max-width: 767px) {
+		font-size: 24px;
+	}
+}

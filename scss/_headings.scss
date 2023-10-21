@@ -1,0 +1,16 @@
+@import "colors.scss";
+
+.title {
+   font-size: 32px;
+   line-height: 39px;
+   font-weight: 700;
+   margin: 67px 0 41px;
+
+   @media (max-width: 1199px) {
+      margin: 25px 0;
+   }
+
+   @media (max-width: 767px) {
+      font-size: 24px;
+   }
+}

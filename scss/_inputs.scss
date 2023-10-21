@@ -1,0 +1,29 @@
+@import "colors.scss";
+
+input {
+	box-sizing: border-box;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	-moz-appearance: textfield; /* Убираем стрелочки для Firefox */
+}
+
+.form__input {
+	border: 0;
+	padding: 0;
+	width: 100%;
+	outline: none;
+
+	&::placeholder {
+		color: $color-gray;
+	}
+
+	@media (max-width: 767px) {
+		font-size: 24px;
+	}
+}

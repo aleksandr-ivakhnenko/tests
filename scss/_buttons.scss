@@ -1,0 +1,82 @@
+@import "colors.scss";
+
+button {
+	border: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: inherit;
+	font-size: inherit;
+
+	cursor: pointer;
+	transition: background-color 0.1s;
+}
+
+.btn {
+	padding: 10px 50px;
+	min-width: 370px;
+
+	color: $color-white;
+	height: 58px;
+
+	@media (max-width: 767px) {
+		font-size: 24px;
+	}
+
+	&_color-blue {
+		background-color: $color-blue;
+	}
+
+	&_fixed-bottom {
+		display: none;
+
+		@media (max-width: 1200px) {
+			display: inline;
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			min-width: 100%;
+			z-index: 0;
+		}
+	}
+}
+
+.form__btn {
+	padding: 10px 50px;
+	flex: 0 0 auto;
+	min-width: 370px;
+
+	background-color: $color-blue;
+	color: $color-white;
+	height: 58px;
+
+	@media (max-width: 1199px) {
+		min-width: 100%;
+	}
+
+	@media (max-width: 767px) {
+		font-size: 24px;
+	}
+
+	&:hover {
+		background-color: $color-blue-hover;
+	}
+
+	&:disabled {
+	}
+
+	&_red {
+		background-color: $color-red;
+		
+		&:hover {
+			background-color: $color-red-hover;
+		}
+	}
+
+	&_green {
+		background-color: $color-green;
+		
+		&:hover {
+			background-color: $color-green-hover;
+		}
+	}
+}
